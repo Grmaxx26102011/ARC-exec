@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RemoteExec - Arc Executer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -23,10 +24,20 @@
         <h1>RemoteExec</h1>
         <p>Execute Without Limits</p>
         <p>Take control from anywhere. Run your scripts remotely with Arc Executer’s cutting-edge technology.</p>
-        <a href="#get-started" class="cta-button">Get Started</a>
+        <a href="#editor-section" class="cta-button">Get Started</a>
     </section>
 
-    <section class="how-it-works">
+    <section class="how-it-works" id="editor-section">
+        <h2>Remote Script Editor</h2>
+        <p>Write, inject, execute, or kill Roblox remotely below.</p>
+        <textarea id="script-editor" rows="10" placeholder="Enter your Roblox script here..."></textarea>
+        <div>
+            <button class="cta-button" onclick="injectScript()">Inject</button>
+            <button class="cta-button" onclick="executeScript()">Execute</button>
+            <button class="cta-button" onclick="killRoblox()">Kill Roblox</button>
+        </div>
+        <p id="output" style="margin-top: 20px; color: #ff00ff;"></p>
+        
         <h2>How It Works</h2>
         <div class="steps">
             <div class="step">
@@ -51,5 +62,7 @@
         <p>© 2025 Arc Executer. All rights reserved.</p>
         <p><a href="index">Home</a> | <a href="index#downloads">Downloads</a> | <a href="editor">Editor</a> | <a href="remoteexec">RemoteExec</a> | <a href="#privacy">Privacy Policy</a> | <a href="#terms">Terms of Use</a></p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
